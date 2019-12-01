@@ -27,4 +27,9 @@ module.exports = {
   externals: {
     '@tensorflow/tfjs': '@tensorflow/tfjs',
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      TFJS_MODEL_URL: JSON.stringify(process.env.TFJS_MODEL_URL),
+    })
+  ],
 };

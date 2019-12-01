@@ -15,7 +15,7 @@ const DEFAULT_FILTER_BOXES_THRESHOLD = 0.01;
 const DEFAULT_IOU_THRESHOLD = 0.4;
 const DEFAULT_CLASS_PROB_THRESHOLD = 0.4
 const DEFAULT_MODEL_LOCATION =
-  'https://raw.githubusercontent.com/MikeShi42/yolo-tiny-tfjs/master/model2.json';
+  TFJS_MODEL_URL ? TFJS_MODEL_URL : 'http://127.0.0.1:8080/models/YOLO/model2.json';
 
 /**
  * Downloads a tf.Model, defaults to a MSCOCO trained Tiny YOLO model
